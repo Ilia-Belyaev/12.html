@@ -1,0 +1,106 @@
+
+.first_str_body{
+    background-image: url(back_body.jpg);
+}
+.first-page-ul{
+  margin:20px;
+  background: rgb(115,144,136);
+  background: radial-gradient(circle, rgba(115,144,136,1) 47%, rgba(180,193,113,1) 87%);
+  border:5px solid rgba(180,193,113,1);
+  border-radius:20%;
+  color:rgb(10, 10, 10);
+  padding:10px;
+  text-decoration: none;
+}
+.first-page-ul:hover{
+  font-size:20px;
+  color:white;
+  background: rgb(46,6,6);
+  background: radial-gradient(circle, rgba(46,6,6,1) 28%, rgba(242,0,0,1) 52%, rgba(224,255,63,0.8083538083538083) 78%);
+}
+
+h1{
+    text-align: center;
+    text-decoration:underline;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.section{
+    scrollbar-width: thin;
+}
+.topnavigation{
+    background-color:none;
+    height: 50px;
+    flex: 100%;
+    display: flex;
+}
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+.logo{
+    
+    mix-blend-mode: multiply;
+    display: block;/*эта и следующая строка выравнивают лого по центру*/
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotation {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+  
+}
+.section{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate (-50%,-50%) ;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px; /* Ограничение ширины */
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .card_photo {
+    width: 100%;
+  }
+  .card_name{
+    color:black;
+  }
+  .card_summary{
+    padding: 4px;
+    font-size: 14px;
+    color:black
+  }
+  .footer{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color:aliceblue;
+  }
+  .section_monstr{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px  300px;
+   
+  }
